@@ -74,3 +74,27 @@ function confirmEnding(astr, target) {
 
   }
 }
+
+
+// recorta cadena chavo  , chav...
+function truncateString(str, num) {
+    if (str.length > num) { 
+      let recortaCadena = str.slice(0,     num) + "...";
+      return recortaCadena;
+    } else {
+      return str; 
+    }
+  }
+  
+  truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+//Primer letra mayuscula y las demas minusculas 
+
+let stt = "I'm a little tea pot"
+function titleCase(stt) {
+    return str.toLowerCase().split(" ").map(word => {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(" ");
+  }
+  
+  
